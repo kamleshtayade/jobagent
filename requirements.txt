@@ -1,0 +1,5 @@
+pdfplumber
+anthropic
+apify-client
+rich
+pyyaml
