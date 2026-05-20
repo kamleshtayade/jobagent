@@ -1,0 +1,35 @@
+# Resume Job Agent — Configuration File
+# Copy this to config.yaml and fill in your keys.
+# Then run: python resume_job_agent.py --config config.yaml --resume /path/to/resume.pdf
+
+# ─────────────────────────────────────────────────────────────
+# API KEYS  (keep this file out of version control)
+# ─────────────────────────────────────────────────────────────
+anthropic_key: "sk-ant-YOUR_KEY_HERE"
+apify_key:     "apify_api_YOUR_KEY_HERE"
+
+# ─────────────────────────────────────────────────────────────
+# SEARCH PARAMETERS
+# ─────────────────────────────────────────────────────────────
+locations:
+  - Bangalore
+  - Pune
+  - Remote
+
+roles:
+  - "Agentic AI Solution Architect"
+  - "GenAI Solution Architect"
+  - "Engineering Manager AI Platform"
+  - "Principal Engineer GenAI"
+  - "Associate Director Application Modernisation"
+
+# ─────────────────────────────────────────────────────────────
+# SCRAPING SETTINGS
+# ─────────────────────────────────────────────────────────────
+max_per_query: 10       # jobs per query per platform (LinkedIn/Indeed/Naukri)
+min_score:     50       # only include jobs with score >= this in the report
+
+# ─────────────────────────────────────────────────────────────
+# OUTPUT
+# ─────────────────────────────────────────────────────────────
+output: "job_matches.md"
